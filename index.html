@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Audy Store</title>
+
+        <!-- Googel Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Montserrat&family=Oswald:wght@200;400&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+            <header class="header">
+                <div class="hero">
+                    <h2 class="heading">Audy Store</h2>
+                    <p class="sub-heading">Hoodie & T-Shirt</p>
+                </div>
+                <div class="features feature-1">
+                    <h4 class="price">IDR 250K</h4>
+                    <p class="item">Hoodie</p>
+                </div>
+                <div class="features feature-2">
+                    <h4 class="price">IDR 200K</h4>
+                    <p class="item">T-Shirt</p>
+                </div>
+            </header>
+
+            <nav class="menu">
+                <div class="menu-toggle">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="brand"><h1>Audy Store</h1></div>
+                <ul class="menu-list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Gallery</a></li>
+                </ul>
+            </nav>
+
+            <section class="services">
+                <div class="service">
+                    <div class="icon">💻</div>
+                    <h3>Tutorial</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Maxime ipsa illum, quam aperiam ut sequi?
+                    </p>
+                </div>
+                <div class="service">
+                    <div class="icon">🧑‍🏫</div>
+                    <h3>Online Coirse</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Maxime ipsa illum, quam aperiam ut sequi?
+                    </p>
+                </div>
+                <div class="service">
+                    <div class="icon">🎙️</div>
+                    <h3>Podcast</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Maxime ipsa illum, quam aperiam ut sequi?
+                    </p>
+                </div>
+                <div class="service">
+                    <div class="icon">📦</div>
+                    <h3>Merch</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Maxime ipsa illum, quam aperiam ut sequi?
+                    </p>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <h2>Gallery</h2>
+                <img src="https://source.unsplash.com/random/1080x1080" alt="">
+                <img src="https://source.unsplash.com/random/1081x1081" alt="">
+                <img src="https://source.unsplash.com/random/1082x1082" alt="">
+                <img src="https://source.unsplash.com/random/1083x1083" alt="">
+                <img src="https://source.unsplash.com/random/1084x1084" alt="">
+                <img src="https://source.unsplash.com/random/1085x1085" alt="">
+                <img src="https://source.unsplash.com/random/1086x1086" alt="">
+                <img src="https://source.unsplash.com/random/1087x1087" alt="">
+                <img src="https://source.unsplash.com/random/1088x1088" alt="">
+                <img src="https://source.unsplash.com/random/1089x1089" alt="">
+            </section>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle input');
+            const nav = document.querySelector('nav ul');
+
+            menuToggle.addEventListener('click', function () {
+                nav.classList.toggle('slide');
+            });
+        </script>
+    </body>
+</html>
